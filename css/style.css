@@ -1,0 +1,919 @@
+html{
+	scroll-behavior: smooth;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none !important;
+}
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+/* Preloder Code Start From Here */
+#preloder{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 999;
+	background:  url('../image/preloder1.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: #1a1f25;
+}
+
+/*neon Button*/
+.a-n1{ margin-left: 0px;
+    text-decoration: none; position: relative; overflow: hidden; transition: 0.2s all;  color: rgba(255, 255, 255, 0); text-transform: uppercase;
+}
+.a-n1:hover{
+    background:rgba(255, 255, 255, 0); color: #fff;
+    /* box-shadow: 0px 0px 10px #fff, 0px 0px 40px#fff, 0px 0px 80px #fff; transition-delay: 1s; */
+}    
+.a-n1 span{
+    position: absolute;
+    display: block;
+}
+.a-n1 span:nth-child(1){
+ top:0px;
+ left: -100%;
+ width: 100%;
+ height: 3px; 
+ background: linear-gradient(90deg,transparent,#fff );
+ opacity: 0;
+}
+ 
+.a-n1:hover span:nth-child(1){
+
+    left:0%; 
+    transition: 0.5s; 
+    opacity: 1;
+}
+
+
+.a-n1 span:nth-child(3){
+ bottom:0px;
+ right:-100%;
+ width: 100%;
+ height: 3px; 
+ background: linear-gradient(270deg,transparent,#fff );
+ opacity: 0;
+}
+ 
+.a-n1:hover span:nth-child(3){
+
+    right:0%; 
+    transition: 0.5s; 
+    transition-delay: 0.5s;
+    opacity: 1;
+}
+
+
+
+.a-n1 span:nth-child(2){
+ top:-100%;
+ right:0;
+ width:  3px;
+ height: 100%; 
+ background: linear-gradient(180deg,transparent,#fff );
+ opacity: 0;
+}
+ 
+.a-n1:hover span:nth-child(2){
+    top:0%; 
+    transition: 0.5s; transition-delay: 0.25s;
+    opacity: 1;
+}
+
+.a-n1 span:nth-child(4){
+ bottom:-100%;
+ left:0;
+ width:  3px;
+ height: 100%; 
+ background: linear-gradient(360deg,transparent,#fff );
+ opacity: 0;
+}
+ 
+.a-n1:hover span:nth-child(4){
+    bottom:0%; 
+    transition: 0.5s;  transition-delay: 0.75s;
+    opacity: 1;
+}
+ .neon-btn{
+    background: transparent;
+    color: #fff;
+    display: inline-block;
+	transition: .5s;
+
+}
+.neon{
+	margin: 0 !important;
+	padding: 15px 30px;
+	border: 3px solid #fff;
+	font-size: 15px !important;
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+}
+.neon:hover{
+	border: 3px solid transparent;
+}
+/*neon Button*/
+/* Header Section CSS Start From Here */
+.header{
+	background-image: url('../image/background-1.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+header{
+	background-color: rgba(00, 0, 0, .8) !important;
+
+}
+
+.bg{
+	background-color: rgba(00, 0, 0, .8) !important;
+	height: 100vh;
+}
+nav{
+}
+.sticky{
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	background: #0000007d !important;
+	z-index: 11;
+}
+
+.sticky>.nav-link{
+	color: #fff !important
+}
+
+.logo{
+		padding: 25px 0px;
+}
+.logo p{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: 700;
+	transition: .5s;
+	letter-spacing: 2px;
+}
+.logo p:hover{
+	color: #015761;
+	transition: .5s;
+}
+.navbar-brand{
+	font-size: 42px;
+	font-weight: 700;
+	color: #f3f4ff;
+	transition: .3s;
+}
+.navbar-brand:hover{
+	color: #015761;
+	transition: .3s;
+}
+ .navbar-toggler{
+	border: none;
+}
+.navbar-toggler:focus{
+	color: transparent;
+}
+
+.navbar-toggler-icon{
+	background-image: url(../image/nav.png);
+}
+.nav-item{
+
+}
+nav ul li a{
+	text-decoration: none;
+	color: #fff !important;
+	font-family: 'Alegreya', serif;
+	font-size: 16px !important;
+	font-weight: 600;
+	margin: 0px 20px;
+	text-transform: uppercase;
+
+}
+nav ul li a{
+	padding: 5px 10px;
+	transition: .5s;
+}
+
+ nav ul li a:hover{
+	transform: none;
+	transition: .5s;
+}
+.header-icon {
+}
+.header-icon li a i:hover{
+	transform: scale(1.2);
+	transition: .5s;
+}
+.header-icon li{
+	list-style: none;
+	font-size: 22px;
+	margin-left: 30px;
+}
+.header-icon li a i{
+	color: #f3f4ff !important;
+}
+
+.header-text{
+	text-align: center;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	margin-top: 12% !important;
+}
+
+.header-text h1{
+	display: inline-block;
+	letter-spacing: 2px;
+	font-size: 18px;
+	font-family: 'Alegreya', serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	
+}
+.header-text h2{
+	font-size: 60px;
+	letter-spacing: 5px;
+	font-family: 'Alegreya', serif;
+	font-weight: 800;
+
+}
+.header-text p{
+	font-size: 20px;
+	letter-spacing: 3px;
+	font-family: 'Alegreya', serif;
+	font-weight: 600;
+	margin-top: 30px;
+	text-transform: uppercase;
+	
+}
+
+/* CSS Animation Code Start From Here */
+
+.nav-item:hover{
+	transition: .5s;
+
+}
+.nav-item{
+	transition: .5s;
+	position: relative;
+	z-index: 1;
+
+}
+.nav-link{
+	transition: .5s !important;
+}
+nav ul li a::before{
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 5%;
+	background: #ffb233;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	transition: .5s;
+}
+nav ul li a:hover::before{
+	cursor: pointer;
+	width: 100%;
+	transition: .5s;
+
+}
+/* CSS Animation Code End From Here */
+
+.scroll{
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.scroll a i{
+	color: #fff;
+	background: transparent;
+	border: 1px solid #fff;
+	padding: 7px 7px;
+	transition: .5s;
+	border-radius: 100%;
+	margin-top: 13%;
+}
+.scroll a i:hover{
+		background: rgba(0, 0, 0, 0.9);
+		transition: .5s;
+		transform: scale(1.1); /* IE 9 */
+	    transform: scale(1.1); /* Safari 3-8 */
+	    transform: scale(1.1); 
+}
+
+/* Header Section CSS End From Here */
+/* About Me Section CSS Start From Here */
+.about-me{
+	text-align: center;
+	padding: 80px 0px;
+	background: #323232;
+}
+.about-me h3{
+	font-family: 'Alegreya', serif;
+	font-size: 30px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: darkgrey;
+	margin-bottom: 40px;
+
+}
+.left-c{
+	background-image: url(../image/me.jpg);
+	background-position: top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	max-width: 100%;
+	height: 100%;
+}
+.img-c{
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.541);
+	position: relative;
+}
+.a-content{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	text-align: right;
+}
+.a-content h1{
+	font-family: 'Alegreya', serif;
+	color: #d1d1d1;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.a-content h5{
+	font-family: 'Alegreya', serif;
+	color: #d1d1d1;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.about-me h4{
+	font-family: 'Alegreya', serif;
+	letter-spacing: 2px;
+	color: grey;
+	font-size: 16px;
+	margin: 40px 200px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.about-me p{
+	font-family: 'Alegreya', serif;
+	font-size: 14px;
+	margin: 40px 5%;
+	line-height: 25px;
+	color: #d6d3d3;
+	letter-spacing: 1px;
+	text-align: left;
+}
+.about-me ul{
+
+}
+.about-me ul li {
+	list-style: none;
+	display: inline-block
+}
+.about-me ul li a{
+	text-decoration: none;
+}
+.about-me ul li a i{
+	color: #eaf0f0f6;
+	padding: 6px;
+	border-radius: 100%;
+	background: #161616;
+	transition: .5s;
+	margin: 0px 25px;
+}
+.about-me ul li a i:hover{
+	background: #000000;
+	transform: scale(1.0); 
+	transition: .5s;
+}
+.about-me .about-btn{
+	font-family:  'Alegreya', serif;
+	font-weight: 400;
+	color: #d1d1d1;
+	border: none;
+	background: transparent;
+	border: 1px solid #7e7e7e;
+	padding: 10px 35px;
+	margin-top: 60px;
+	text-transform: uppercase;
+	transition: .5s;
+	border-radius: 5px;
+	letter-spacing: 2px;
+	font-weight: 700;
+
+}
+.about-me .about-btn:hover{
+	background: #030302;
+	color: #fff;
+	transition: .5s;
+	border-color: #000;
+}
+/* About Me Section CSS End From Here */
+/* Service Section CSS Start From Here */
+
+.service{
+	background-image: url('../image/background-3.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.bg-2{
+	background-color: rgba(14, 13, 13, 0.8);
+}
+.s-p{
+	margin-bottom: 140px;
+}
+.s-p h1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	letter-spacing: 3px;
+	font-weight: 400;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 80px 0px;
+}
+.s-p p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	color: #fff;
+}
+.s-p i{
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	padding: 30px;
+	border-radius: 100%;
+	background: #ffc045;
+	 transition: .5s;
+}
+.s-p i:hover{
+	 box-shadow: 0 0 8px 3px #ffc045;
+	 transition: .5s;
+}
+/* Service Section CSS End From Here */
+/* Testimonals Section CSS Start From Here */
+.Testimonal{
+	background: rgb(4, 8, 14);;
+	padding: 20px 0px;
+}
+.Testimonal h1{
+	    font-family: 'Montserrat', sans-serif;
+		text-align: center;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-weight: 700;
+		margin: 50px 0px;
+		color: rgb(172, 170, 173);
+}
+.slide{
+	margin-bottom: 50px;
+}
+.slider{
+	text-align: center;
+	background-color: rgb(9, 15, 24);
+	padding: 50px 0px;
+	margin-bottom: 50px;
+	margin: 0px 20%;
+	position: relative;
+}
+.slider img{
+	height: 150px;
+	width: 150px !important;
+	border-radius: 300px;
+	margin: 0 auto;
+}
+.slider h2{
+	font-family: 'Montserrat', sans-serif;
+	margin: 20px 0px;
+	font-weight: 700;
+	color: rgb(172, 170, 173);
+}
+
+.slider p{
+	font-size: 14px;
+	font-family: 'Alegreya', serif;
+	padding: 0px 15%;
+	color: rgb(172, 170, 173);
+}
+.owl-nav{
+	display: none;
+}
+.owl-theme .owl-dots .owl-dot.active span, 
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: #ffc045 !important;
+}
+/* Testimonals Section CSS End From Here */
+/* Portfolio Section CSS Start From Here */
+.portfolio{
+	padding: 80px 0px;
+	background-color: #323232;
+}
+.project{
+	margin-top: 20px !important;
+}
+.project a{
+	color: #fff !important;
+}
+.portfolio h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+	color: rgba(189, 189, 189, 0.8);
+}
+.portfolio img{
+	border: 7px solid #000;
+	height: 380px;
+	transition: .3s;
+}
+.portfolio img:hover{
+		transition: .3s;
+}
+
+.part-1{
+	margin-top: 30px;
+}
+.part-2{
+	margin-top: 30px;
+}
+
+
+.p-btn{
+	text-align: center;
+
+}
+.p-btn button{
+	font-family: 'Open Sans', sans-serif;
+	padding: 12px 45px;
+	border: 1px solid #323232;
+	background: #fff;
+	color: #000;
+	font-size: 16px;
+	font-weight: 600;
+	margin-top: 90px;
+	text-transform: uppercase;
+	transition: .5s;
+	border-radius: 5px;
+}
+.p-btn button:hover{
+	background: rgb(12, 3, 3);
+	color: #fff;
+	transition: .5s;
+}
+/* Portfolio Section CSS End From Here */
+/* Portfolio2 Section CSS Start From Here */
+
+
+
+
+/* Portfolio2 Section CSS End From Here *
+/* Skills Section CSS Start From Here */
+.skill{
+	text-align: center;
+	background: #030b11;
+	padding: 80px 0px;
+}
+.skill h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 20px 0px;
+	color: #879394;
+}
+
+.skill h3{
+	font-family: 'Montserrat', sans-serif;	
+	margin: 20px 0px;
+	color: rgb(212, 209, 221);
+}
+.skill-c{
+
+}
+.skill-c h2{
+		font-family: 'Montserrat', sans-serif;
+		margin: 10px 0px;	
+		font-size: 25px;
+		color: rgb(194, 218, 235);
+}
+.skill-c ul li{
+	list-style: none;
+}
+.skill-c ul li p{
+	list-style: none;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 16px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #56a0a8;
+
+}
+.skill-c a i{
+	font-size: 60px;
+	color: #015761;
+	transition: .5s;
+}
+.skill-c a i:hover{
+	color: #ffc045;
+	transition: .5s;
+	transform: scale(1.3);
+}
+
+
+
+/* Skills Section CSS End From Here */
+/* Prograss Bar CSS Srart From Here */
+.prograss-bar{
+	background-color: #1a1f25;
+}
+.p-bar{
+	width: 60%;
+	margin: auto;
+	padding: 100px 0px;
+}
+.p-bar h4{
+	color: #d6d3d3;
+}
+.barfiller {
+    width:100%;
+    height:18px;
+    background:#031129;
+    border:1px solid #030b11;
+    position:relative;
+    margin-bottom:20px;
+    box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5); 
+    -moz-box-shadow: inset 1px 4px 9px -6px rgba(0,0,0,.5); 
+}
+
+.barfiller .fill {
+    display:block;
+    position:relative;
+    width:0px;
+    height:100%;
+    background:#333;
+    z-index:1;
+}
+
+.barfiller .tipWrap {
+    display:none;
+}
+
+.barfiller .tip {
+    margin-top:-30px;
+    padding:2px 4px;
+    font-size:11px;
+    color:#fff;
+    left:0px;
+    position:absolute;
+    z-index:2;
+    background: #333;
+} 
+
+.barfiller .tip:after {
+    border:solid;
+    border-color:rgba(0,0,0,.8) transparent;
+    border-width:6px 6px 0 6px;
+    content:"";
+    display:block;
+    position:absolute;
+    left:9px;
+    top:100%;
+    z-index:9
+}
+
+/* Prograss Bar CSS End From Here */
+/* Contact Me Section CSS Start From Here */
+.contact{
+	background-image: url('../image/background-4.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.contact-me{
+	background: rgba(0, 0, 0, .6)
+}
+.contact-me h1{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #fff;
+	margin-top: 50px;
+}
+form input, textarea{
+	background: transparent !important;
+}
+
+form .btn{
+	background: transparent;
+	background: #ffb233;
+	width: 100%;
+	color: #fff;
+	font-weight: 600;
+	margin-bottom: 50px;
+	margin-top: 20px;
+	transition: .5s;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+}
+form .btn:hover{
+	border: 1px solid #fff !important;
+	background: transparent;
+	color: #fff;
+	transition: .5s;
+}
+.form-control{
+	font-size: 18px !important;
+	color: #fff !important;
+}
+
+/* Contact Me Section CSS End From Here */
+/* Footer Section CSS Start From Here */
+
+
+
+
+
+.copyright{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	background: #191919;
+	padding: 40px 0px;
+
+}
+.copyright p{
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 600;
+}
+.scroll-2{
+	transition: .5s;
+	position: absolute;
+	right: 25px;
+	height: 30px;
+	width: 30px;
+	border-radius:50px;
+	line-height: 25px;
+	border: 1px solid #fff;
+}
+.scroll-2 a i{
+	color: #fff;
+
+
+}
+.scroll-2:hover{
+	background: #ffb233;
+	transition: .5s;
+	transform: scale(1.3);
+}
+
+
+/* Footer Section CSS Start From Here */
+
+/* Isotope plugin css */
+
+ul.filters{
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0;
+}
+
+ul.filters > li{
+    list-style: none;
+    display: inline-block;
+}
+
+ul.filters > li > a{
+    display: block;
+    color: #b8c1cf;
+    text-decoration: none;
+    padding: 5px 20px;
+	font-weight: 600;
+}
+
+ul.filters > li > a:hover{
+    background-color: #e6e9ed;
+}
+
+ul.filters > li.active > a{
+    color: #fff;
+    background-color: #28bea8;
+}
+
+.card{
+    position: relative;
+    margin-bottom: 50px;
+    color: #000;
+    border-radius: 0;
+    border: 1px solid #323232 !important;
+    background-color: #fff;
+    box-shadow: 1px 1px 1.5px rgba(0,0,0,0.075);
+}
+
+.card-head{
+    position: relative;
+    overflow: hidden;
+	background-color: #323232;
+	border: 1px solid #323232 !important;
+}
+
+.card-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background-color: rgba(67,78,94,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color :#fff;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+}
+
+.card-hover{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(40,190,168,0.9);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 30px;
+    -webkit-transition: ease-in-out 0.2s;
+    -moz-transition: ease-in-out 0.2s;
+    -ms-transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
+}
+
+.card-body{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h4.title{
+    color: #434e5e;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.card-btn{
+    margin-bottom: -40px;
+    font-size: 0.9rem;
+    background-color: #fff;
+    color: #222;
+    border: 1px solid #eee;
+    border-radius: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.card-btn:hover{
+    background-color: #28bea8;
+    color: #fff;
+}
+.projects{
+	width: 100% !important;
+	display: flex !important;
+}
+.item{
+	width: 30%!important;
+}
